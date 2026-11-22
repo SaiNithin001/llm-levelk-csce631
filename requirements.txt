@@ -1,0 +1,7 @@
+# Analysis (versions used to produce the reported tables and figures; Python 3.13)
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+matplotlib==3.11.2
+# Data collection only (harness/)
+openai==3.45.0   # data collection ran on Python 3.12

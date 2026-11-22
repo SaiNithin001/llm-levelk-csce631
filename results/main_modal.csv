@@ -1,0 +1,50 @@
+model,game,framing,cot,modal,share,level
+Claude-Haiku-4.5,beauty,ai_competition,False,22,0.72,L2
+Claude-Haiku-4.5,beauty,ai_competition,True,0,0.91,Nash (0)
+Claude-Haiku-4.5,beauty,neutral,False,22,0.48,L2
+Claude-Haiku-4.5,beauty,neutral,True,0,0.87,Nash (0)
+Claude-Haiku-4.5,beauty_p05,neutral,False,0,0.81,Nash (0)
+Claude-Haiku-4.5,beauty_p05,neutral,True,0,0.9,Nash (0)
+Claude-Haiku-4.5,matrix3x3,ai_competition,False,2,0.95,C (L1)
+Claude-Haiku-4.5,matrix3x3,ai_competition,True,0,0.78,"A (Nash, L2+)"
+Claude-Haiku-4.5,matrix3x3,neutral,False,2,1.0,C (L1)
+Claude-Haiku-4.5,matrix3x3,neutral,True,0,0.95,"A (Nash, L2+)"
+Claude-Haiku-4.5,req11_20,ai_competition,False,11,0.39,L9
+Claude-Haiku-4.5,req11_20,ai_competition,True,19,0.43,L1
+Claude-Haiku-4.5,req11_20,neutral,False,16,0.83,L4
+Claude-Haiku-4.5,req11_20,neutral,True,19,0.46,L1
+gemini-2.5-flash,beauty,ai_competition,False,0,0.19,Nash (0)
+gemini-2.5-flash,beauty,neutral,False,18,0.18,L2
+gemini-2.5-flash,beauty_p05,neutral,False,10,0.32,L2
+gemini-2.5-flash,matrix3x3,ai_competition,False,0,0.9696969696969697,"A (Nash, L2+)"
+gemini-2.5-flash,matrix3x3,neutral,False,0,0.96,"A (Nash, L2+)"
+gemini-2.5-flash,req11_20,ai_competition,False,19,0.5555555555555556,L1
+gemini-2.5-flash,req11_20,neutral,False,11,0.46464646464646464,L9
+gpt-5-mini,beauty,ai_competition,False,0,0.99,Nash (0)
+gpt-5-mini,beauty,ai_competition,True,0,1.0,Nash (0)
+gpt-5-mini,beauty,neutral,False,0,0.98,Nash (0)
+gpt-5-mini,beauty,neutral,True,0,1.0,Nash (0)
+gpt-5-mini,beauty_p05,neutral,False,0,0.99,Nash (0)
+gpt-5-mini,beauty_p05,neutral,True,0,1.0,Nash (0)
+gpt-5-mini,matrix3x3,ai_competition,False,2,0.63,C (L1)
+gpt-5-mini,matrix3x3,ai_competition,True,0,0.69,"A (Nash, L2+)"
+gpt-5-mini,matrix3x3,neutral,False,0,0.53,"A (Nash, L2+)"
+gpt-5-mini,matrix3x3,neutral,True,0,0.797979797979798,"A (Nash, L2+)"
+gpt-5-mini,req11_20,ai_competition,False,20,0.52,L0 (20)
+gpt-5-mini,req11_20,ai_competition,True,20,0.47,L0 (20)
+gpt-5-mini,req11_20,neutral,False,19,0.56,L1
+gpt-5-mini,req11_20,neutral,True,15,0.52,L5
+llama3.2,beauty,ai_competition,False,33,0.23,L1
+llama3.2,beauty,ai_competition,True,50,0.15053763440860216,none
+llama3.2,beauty,neutral,False,33,0.21,L1
+llama3.2,beauty,neutral,True,0,0.21839080459770116,Nash (0)
+llama3.2,beauty_p05,neutral,False,50,0.6,none
+llama3.2,beauty_p05,neutral,True,50,0.38202247191011235,none
+llama3.2,matrix3x3,ai_competition,False,2,0.74,C (L1)
+llama3.2,matrix3x3,ai_competition,True,2,0.55,C (L1)
+llama3.2,matrix3x3,neutral,False,2,0.8,C (L1)
+llama3.2,matrix3x3,neutral,True,2,0.5858585858585859,C (L1)
+llama3.2,req11_20,ai_competition,False,17,0.29,L3
+llama3.2,req11_20,ai_competition,True,11,0.23404255319148937,L9
+llama3.2,req11_20,neutral,False,18,0.28,L2
+llama3.2,req11_20,neutral,True,11,0.20212765957446807,L9

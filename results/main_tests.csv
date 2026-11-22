@@ -1,0 +1,68 @@
+test,a,b,tau_a,tau_b,dtau_lo,dtau_hi,tau_differs,alpha_a,alpha_b,dalpha_lo,dalpha_hi,alpha_differs,TV,perm_p
+H2 reasoning on vs off,Claude-Haiku-4.5|beauty|ai_competition|True,Claude-Haiku-4.5|beauty|ai_competition|False,3.7,1.95,0.5000000000000002,2.8999999999999995,True,0.95,0.25,0.6,0.75,True,0.91,0.0004997501249375312
+H2 reasoning on vs off,Claude-Haiku-4.5|beauty|neutral|True,Claude-Haiku-4.5|beauty|neutral|False,3.95,1.95,0.3999999999999999,2.8999999999999995,True,0.9,0.45,0.30000000000000004,0.55,True,0.54,0.0004997501249375312
+H2 reasoning on vs off,Claude-Haiku-4.5|beauty_p05|neutral|True,Claude-Haiku-4.5|beauty_p05|neutral|False,2.5,1.6,-1.45,2.1999999999999997,False,0.95,0.8,0.04999999999999993,0.19999999999999996,True,0.16999999999999998,0.001999000499750125
+H2 reasoning on vs off,Claude-Haiku-4.5|matrix3x3|ai_competition|True,Claude-Haiku-4.5|matrix3x3|ai_competition|False,2.8,0.65,1.7000000000000002,2.75,True,0.0,0.0,0.0,0.0,False,0.73,0.0004997501249375312
+H2 reasoning on vs off,Claude-Haiku-4.5|matrix3x3|neutral|True,Claude-Haiku-4.5|matrix3x3|neutral|False,4.7,0.65,3.2,5.3,True,0.0,0.0,0.0,0.45,False,0.95,0.0004997501249375312
+H2 reasoning on vs off,Claude-Haiku-4.5|req11_20|ai_competition|True,Claude-Haiku-4.5|req11_20|ai_competition|False,0.35,0.0,-4.5,0.4,False,0.0,0.05,-0.15,0.0,False,0.65,0.0004997501249375312
+H2 reasoning on vs off,Claude-Haiku-4.5|req11_20|neutral|True,Claude-Haiku-4.5|req11_20|neutral|False,0.35,4.6,-4.35,-4.1499999999999995,True,0.0,0.0,0.0,0.0,False,0.97,0.0004997501249375312
+H2 reasoning on vs off,gpt-5-mini|beauty|ai_competition|True,gpt-5-mini|beauty|ai_competition|False,0.0,1.95,-1.95,0.0,False,1.0,0.95,0.0,0.050000000000000044,False,0.010000000000000005,1.0
+H2 reasoning on vs off,gpt-5-mini|beauty|neutral|True,gpt-5-mini|beauty|neutral|False,0.0,1.95,-1.95,0.0,False,1.0,0.95,0.0,0.050000000000000044,False,0.02000000000000001,0.4942528735632184
+H2 reasoning on vs off,gpt-5-mini|beauty_p05|neutral|True,gpt-5-mini|beauty_p05|neutral|False,0.0,1.35,-1.35,0.0,False,1.0,0.95,0.0,0.050000000000000044,False,0.010000000000000005,1.0
+H2 reasoning on vs off,gpt-5-mini|matrix3x3|ai_competition|True,gpt-5-mini|matrix3x3|ai_competition|False,2.3,1.2,0.6499999999999999,1.7000000000000002,True,0.0,0.0,-0.1,0.0,False,0.31999999999999995,0.0004997501249375312
+H2 reasoning on vs off,gpt-5-mini|matrix3x3|neutral|True,gpt-5-mini|matrix3x3|neutral|False,2.9,1.7,0.6500000000000001,1.9499999999999997,True,0.0,0.0,0.0,0.0,False,0.267979797979798,0.0004997501249375312
+H2 reasoning on vs off,gpt-5-mini|req11_20|ai_competition|True,gpt-5-mini|req11_20|ai_competition|False,5.9,5.9,0.0,0.0,False,0.0,0.0,0.0,0.0,False,0.19,0.022988505747126436
+H2 reasoning on vs off,gpt-5-mini|req11_20|neutral|True,gpt-5-mini|req11_20|neutral|False,5.9,0.5,0.0,5.5,False,0.0,0.05,-0.15,0.2,False,0.38000000000000006,0.0004997501249375312
+H2 reasoning on vs off,llama3.2|beauty|ai_competition|True,llama3.2|beauty|ai_competition|False,0.15,0.45,-1.5999999999999999,5.3999999999999995,False,0.3,0.0,0.2,0.4,True,0.7564516129032258,0.0004997501249375312
+H2 reasoning on vs off,llama3.2|beauty|neutral|True,llama3.2|beauty|neutral|False,0.45,0.35,-0.2,0.85,False,0.35,0.0,0.25,0.5,True,0.6445977011494254,0.0004997501249375312
+H2 reasoning on vs off,llama3.2|beauty_p05|neutral|True,llama3.2|beauty_p05|neutral|False,0.05,0.0,0.0,1.6,False,0.25,0.0,0.09999999999999999,0.35,True,0.45685393258426965,0.0004997501249375312
+H2 reasoning on vs off,llama3.2|matrix3x3|ai_competition|True,llama3.2|matrix3x3|ai_competition|False,0.65,0.65,-0.2,0.35,False,0.1,0.0,-0.05,0.15,False,0.18999999999999997,0.010494752623688156
+H2 reasoning on vs off,llama3.2|matrix3x3|neutral|True,llama3.2|matrix3x3|neutral|False,0.65,0.65,-0.050000000000000044,0.45000000000000007,False,0.15,0.0,-0.05,0.15,False,0.21414141414141416,0.00399800099950025
+H2 reasoning on vs off,llama3.2|req11_20|ai_competition|True,llama3.2|req11_20|ai_competition|False,0.15,2.4,-5.9,-1.8499999999999999,True,0.0,0.3,-0.7,-0.1,True,0.5212765957446809,0.0004997501249375312
+H2 reasoning on vs off,llama3.2|req11_20|neutral|True,llama3.2|req11_20|neutral|False,0.15,4.9,-5.7,-1.85,True,0.0,0.5,-0.65,-0.2,True,0.4857446808510638,0.0004997501249375312
+H2 AI framing vs neutral,Claude-Haiku-4.5|beauty|ai_competition|False,Claude-Haiku-4.5|beauty|neutral|False,1.95,1.95,-0.5000000000000002,0.5000000000000002,False,0.25,0.45,-0.35000000000000003,-0.0987500000000068,True,0.42,0.0004997501249375312
+H2 AI framing vs neutral,Claude-Haiku-4.5|beauty|ai_competition|True,Claude-Haiku-4.5|beauty|neutral|True,3.7,3.95,-1.7012500000000002,1.4999999999999996,False,0.95,0.9,-0.04999999999999993,0.09999999999999998,False,0.07,0.5912043978010995
+H2 AI framing vs neutral,Claude-Haiku-4.5|matrix3x3|ai_competition|False,Claude-Haiku-4.5|matrix3x3|neutral|False,0.65,0.65,0.0,0.0,False,0.0,0.0,0.0,0.0,False,0.050000000000000024,0.05897051474262868
+H2 AI framing vs neutral,Claude-Haiku-4.5|matrix3x3|ai_competition|True,Claude-Haiku-4.5|matrix3x3|neutral|True,2.8,4.7,-2.6999999999999997,-1.5500000000000003,True,0.0,0.0,-0.45,0.0,False,0.16999999999999996,0.0009995002498750624
+H2 AI framing vs neutral,Claude-Haiku-4.5|req11_20|ai_competition|False,Claude-Haiku-4.5|req11_20|neutral|False,0.0,4.6,-4.6,0.25,False,0.05,0.0,0.0,0.15,False,0.54,0.0004997501249375312
+H2 AI framing vs neutral,Claude-Haiku-4.5|req11_20|ai_competition|True,Claude-Haiku-4.5|req11_20|neutral|True,0.35,0.35,-0.15000000000000002,0.10000000000000003,False,0.0,0.0,0.0,0.0,False,0.10000000000000002,0.4012993503248376
+H2 AI framing vs neutral,gemini-2.5-flash|beauty|ai_competition|False,gemini-2.5-flash|beauty|neutral|False,5.55,2.8,2.1500000000000004,2.9000000000000004,True,0.3,0.0,0.15000000000000002,0.4,True,0.8600000000000001,0.0004997501249375312
+H2 AI framing vs neutral,gemini-2.5-flash|matrix3x3|ai_competition|False,gemini-2.5-flash|matrix3x3|neutral|False,5.3,5.0,-5.95,0.5,False,0.0,0.0,-0.04999999999999999,0.55,False,0.009696969696969728,1.0
+H2 AI framing vs neutral,gemini-2.5-flash|req11_20|ai_competition|False,gemini-2.5-flash|req11_20|neutral|False,0.45,0.3,0.04999999999999999,0.30000000000000004,True,0.0,0.0,0.0,0.0,False,0.17171717171717174,0.027486256871564217
+H2 AI framing vs neutral,gpt-5-mini|beauty|ai_competition|False,gpt-5-mini|beauty|neutral|False,1.95,1.95,-1.95,1.95,False,0.95,0.95,-0.050000000000000044,0.050000000000000044,False,0.010000000000000005,1.0
+H2 AI framing vs neutral,gpt-5-mini|beauty|ai_competition|True,gpt-5-mini|beauty|neutral|True,0.0,0.0,0.0,0.0,False,1.0,1.0,0.0,0.0,False,0.0,1.0
+H2 AI framing vs neutral,gpt-5-mini|matrix3x3|ai_competition|False,gpt-5-mini|matrix3x3|neutral|False,1.2,1.7,-1.05,-0.050000000000000044,True,0.0,0.0,0.0,0.1,False,0.16000000000000003,0.03948025987006497
+H2 AI framing vs neutral,gpt-5-mini|matrix3x3|ai_competition|True,gpt-5-mini|matrix3x3|neutral|True,2.3,2.9,-1.3499999999999999,0.09999999999999964,False,0.0,0.0,0.0,0.0,False,0.10797979797979802,0.10844577711144428
+H2 AI framing vs neutral,gpt-5-mini|req11_20|ai_competition|False,gpt-5-mini|req11_20|neutral|False,5.9,0.5,0.0,5.5,False,0.0,0.05,-0.15,0.0,False,0.3400000000000001,0.0004997501249375312
+H2 AI framing vs neutral,gpt-5-mini|req11_20|ai_competition|True,gpt-5-mini|req11_20|neutral|True,5.9,5.9,0.0,0.0,False,0.0,0.0,-0.2,0.0,False,0.26,0.0004997501249375312
+H2 AI framing vs neutral,llama3.2|beauty|ai_competition|False,llama3.2|beauty|neutral|False,0.45,0.35,-0.10000000000000003,1.65,False,0.0,0.0,0.0,0.0,False,0.32,0.054972513743128434
+H2 AI framing vs neutral,llama3.2|beauty|ai_competition|True,llama3.2|beauty|neutral|True,0.15,0.45,-1.0,5.25,False,0.3,0.35,-0.2,0.10000000000000003,False,0.38116425658138675,0.2683658170914543
+H2 AI framing vs neutral,llama3.2|matrix3x3|ai_competition|False,llama3.2|matrix3x3|neutral|False,0.65,0.65,0.0,0.0,False,0.0,0.0,0.0,0.05,False,0.06000000000000002,0.48875562218890556
+H2 AI framing vs neutral,llama3.2|matrix3x3|ai_competition|True,llama3.2|matrix3x3|neutral|True,0.65,0.65,-0.35,0.04999999999999993,False,0.1,0.15,-0.1,0.15,False,0.048888888888888885,0.7151424287856072
+H2 AI framing vs neutral,llama3.2|req11_20|ai_competition|False,llama3.2|req11_20|neutral|False,2.4,4.9,-3.05125,3.6012499999999936,False,0.3,0.5,-0.45,0.30000000000000004,False,0.19000000000000003,0.07596201899050475
+H2 AI framing vs neutral,llama3.2|req11_20|ai_competition|True,llama3.2|req11_20|neutral|True,0.15,0.15,-0.20000000000000007,0.2,False,0.0,0.0,-0.05,0.0,False,0.18085106382978725,0.4177911044477761
+p=1/2 vs p=2/3,Claude-Haiku-4.5|beauty_p05|neutral|False,Claude-Haiku-4.5|beauty|neutral|False,1.6,1.95,-1.1500000000000001,-0.050000000000000044,True,0.8,0.45,0.19999999999999996,0.45000000000000007,True,0.47000000000000003,0.0004997501249375312
+p=1/2 vs p=2/3,Claude-Haiku-4.5|beauty_p05|neutral|True,Claude-Haiku-4.5|beauty|neutral|True,2.5,3.95,-3.7,0.10124999999999369,False,0.95,0.9,-0.04999999999999993,0.09999999999999998,False,0.08000000000000002,0.5942028985507246
+p=1/2 vs p=2/3,gemini-2.5-flash|beauty_p05|neutral|False,gemini-2.5-flash|beauty|neutral|False,3.55,2.8,0.5,1.1500000000000004,True,0.0,0.0,-0.05,0.0,False,0.98,0.0004997501249375312
+p=1/2 vs p=2/3,gpt-5-mini|beauty_p05|neutral|False,gpt-5-mini|beauty|neutral|False,1.35,1.95,-1.95,1.35,False,0.95,0.95,-0.050000000000000044,0.050000000000000044,False,0.020000000000000004,0.4917541229385307
+p=1/2 vs p=2/3,gpt-5-mini|beauty_p05|neutral|True,gpt-5-mini|beauty|neutral|True,0.0,0.0,0.0,0.0,False,1.0,1.0,0.0,0.0,False,0.0,1.0
+p=1/2 vs p=2/3,llama3.2|beauty_p05|neutral|False,llama3.2|beauty|neutral|False,0.0,0.35,-0.5,-0.2,True,0.0,0.0,0.0,0.1,False,0.76,0.0004997501249375312
+p=1/2 vs p=2/3,llama3.2|beauty_p05|neutral|True,llama3.2|beauty|neutral|True,0.05,0.45,-1.15,1.001249999999993,False,0.25,0.35,-0.3,0.04999999999999999,False,0.46674415601188163,0.0004997501249375312
+H1 model pair (beauty),Claude-Haiku-4.5|beauty|neutral|False,gemini-2.5-flash|beauty|neutral|False,1.95,2.8,-0.8499999999999999,-0.34999999999999964,True,0.45,0.0,0.35,0.55,True,0.84,0.0004997501249375312
+H1 model pair (beauty),Claude-Haiku-4.5|beauty|neutral|False,gpt-5-mini|beauty|neutral|False,1.95,1.95,0.0,2.45,False,0.45,0.95,-0.6,-0.3999999999999999,True,0.55,0.0004997501249375312
+H1 model pair (beauty),Claude-Haiku-4.5|beauty|neutral|False,llama3.2|beauty|neutral|False,1.95,0.35,1.5,2.2,True,0.45,0.0,0.35,0.55,True,0.99,0.0004997501249375312
+H1 model pair (beauty),gemini-2.5-flash|beauty|neutral|False,gpt-5-mini|beauty|neutral|False,2.8,1.95,0.8499999999999999,2.8,True,0.0,0.95,-1.0,-0.8999999999999999,True,0.9699999999999999,0.0004997501249375312
+H1 model pair (beauty),gemini-2.5-flash|beauty|neutral|False,llama3.2|beauty|neutral|False,2.8,0.35,2.3,2.5999999999999996,True,0.0,0.0,0.0,0.05,False,0.9400000000000001,0.0004997501249375312
+H1 model pair (beauty),gpt-5-mini|beauty|neutral|False,llama3.2|beauty|neutral|False,1.95,0.35,-0.3512499999999999,1.75,False,0.95,0.0,0.95,1.0,True,0.9900000000000001,0.0004997501249375312
+H1 model pair (req11_20),Claude-Haiku-4.5|req11_20|neutral|False,gemini-2.5-flash|req11_20|neutral|False,4.6,0.3,4.199999999999999,4.3999999999999995,True,0.0,0.0,0.0,0.0,False,0.97,0.0004997501249375312
+H1 model pair (req11_20),Claude-Haiku-4.5|req11_20|neutral|False,gpt-5-mini|req11_20|neutral|False,4.6,0.5,-1.3000000000000007,4.199999999999999,False,0.0,0.05,-0.15,0.0,False,0.85,0.0004997501249375312
+H1 model pair (req11_20),Claude-Haiku-4.5|req11_20|neutral|False,llama3.2|req11_20|neutral|False,4.6,4.9,-1.2000000000000002,2.3499999999999996,False,0.0,0.5,-0.65,-0.2,True,0.77,0.0004997501249375312
+H1 model pair (req11_20),gemini-2.5-flash|req11_20|neutral|False,gpt-5-mini|req11_20|neutral|False,0.3,0.5,-5.65,-0.050000000000000044,True,0.0,0.05,-0.15,0.0,False,0.4046464646464647,0.0004997501249375312
+H1 model pair (req11_20),gemini-2.5-flash|req11_20|neutral|False,llama3.2|req11_20|neutral|False,0.3,4.9,-5.55,-1.9,True,0.0,0.5,-0.65,-0.2,True,0.89,0.0004997501249375312
+H1 model pair (req11_20),gpt-5-mini|req11_20|neutral|False,llama3.2|req11_20|neutral|False,0.5,4.9,-5.3,3.5500000000000003,False,0.05,0.5,-0.65,-0.15,True,0.7100000000000001,0.0004997501249375312
+H1 model pair (matrix3x3),Claude-Haiku-4.5|matrix3x3|neutral|False,gemini-2.5-flash|matrix3x3|neutral|False,0.65,5.0,-5.3,-3.3000000000000003,True,0.0,0.0,-0.45,0.0,False,0.96,0.0004997501249375312
+H1 model pair (matrix3x3),Claude-Haiku-4.5|matrix3x3|neutral|False,gpt-5-mini|matrix3x3|neutral|False,0.65,1.7,-1.4,-0.7000000000000001,True,0.0,0.0,0.0,0.0,False,0.53,0.0004997501249375312
+H1 model pair (matrix3x3),Claude-Haiku-4.5|matrix3x3|neutral|False,llama3.2|matrix3x3|neutral|False,0.65,0.65,0.0,0.0,False,0.0,0.0,-0.05,0.0,False,0.19999999999999998,0.0004997501249375312
+H1 model pair (matrix3x3),gemini-2.5-flash|matrix3x3|neutral|False,gpt-5-mini|matrix3x3|neutral|False,5.0,1.7,2.25,4.4,True,0.0,0.0,0.0,0.45,False,0.42999999999999994,0.0004997501249375312
+H1 model pair (matrix3x3),gemini-2.5-flash|matrix3x3|neutral|False,llama3.2|matrix3x3|neutral|False,5.0,0.65,3.3000000000000003,5.3,True,0.0,0.0,-0.05,0.45,False,0.79,0.0004997501249375312
+H1 model pair (matrix3x3),gpt-5-mini|matrix3x3|neutral|False,llama3.2|matrix3x3|neutral|False,1.7,0.65,0.7000000000000001,1.4,True,0.0,0.0,-0.05,0.0,False,0.36000000000000004,0.0004997501249375312
