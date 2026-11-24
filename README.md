@@ -1,5 +1,5 @@
 # How Deep Do LLMs Think? — code and data (CSCE 631-D, Fall 2026, Sai Maddi)
-Version used for the final report: [ADD COMMIT HASH OR RELEASE TAG] (Dec 2026).
+Version used for the final report: release tag `v1.0` (https://github.com/SaiNithin001/llm-levelk-csce631/releases/tag/v1.0) (Dec 2026).
 
 ## Contents
 - `harness/`: sampling code for the TAMU AI API gateway (`harness.py`, `prompts.py`), the live repeated-game exploiter (`live_1120.py`, with its precomputed posterior table `exploiter_table.npz`), and the level-0 elicitation (`elicit_l0.py`).
