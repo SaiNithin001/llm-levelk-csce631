@@ -19,7 +19,7 @@
 \setlength{\floatsep}{10pt plus 2pt minus 2pt}
 \setlength{\abovecaptionskip}{4pt}
 \newcommand{\codelink}{\textbf{[ADD LINK TO CODE AND DATA ARCHIVE]}}
-\newcommand{\videolink}{\textbf{[ADD VIDEO LINK]}}
+\newcommand{\videolink}{\url{https://drive.google.com/file/d/1DuHHxZSSwBFNKfLNfPnwxPUPI7lHdR29/view?usp=sharing}}
 \newcommand{\commitref}{\textbf{[ADD COMMIT HASH OR RELEASE TAG]}}
 \newcommand{\openaiversion}{3.45.0, Python 3.12}
 
@@ -151,14 +151,14 @@ Pooled, all 14 conditions & 2.50 [1.35, 3.80], $\alpha=.55$ & 0.25 [0.15, 5.90]$
 Pooling the 14 beauty-contest conditions, each counted as one player type, gives $\tau=2.50$ [1.35, 3.80] with an equilibrium share of $0.55$ [0.30, 0.75]. People typically have $\tau\approx1.5$ and rarely choose exactly 0 \citep{camerer2004,nagel1995}, so as a population these models play the equilibrium of a dominance-solvable game far more often than people do. Per-condition intervals are often degenerate (for example [1.95, 1.95]) because a near-deterministic model resamples to the same distribution; this reflects low variability between calls, not precision about a population, and is why the pooled fit is the more defensible summary.
 
 \subsection{What moves the depth}
-\paragraph{Visible reasoning.} Reasoning changed the choice distribution in 18 of 21 comparisons, but its direction depended on the game. Where iterated dominance solves the game it moved play to the equilibrium: Haiku's share of guesses of 0 or 1 rose from 47\% to 88\% (neutral) and from 26\% to 91\% (AI framing), and its share of $A$ in the $3{\times}3$ game from 0--5\% to 78--95\%. In the 11--20 game, which has no dominance argument, reasoning made Haiku \emph{shallower}: its modal request moved from 16 (level 4) to 19 and 20 (levels 1 and 0). H2 is therefore supported for reasoning, with a game-dependent sign.
+\paragraph{Visible reasoning.} In the true on/off comparison (Haiku, Llama) reasoning changed the choice distribution in all 14 cases; for GPT-5-mini, which reasons internally either way, visible reasoning changed 4 of 7, none in the beauty contest. The direction depended on the game. Where iterated dominance solves the game it moved play to the equilibrium: Haiku's share of guesses of 0 or 1 rose from 47\% to 88\% (neutral) and from 26\% to 91\% (AI framing), and its share of $A$ in the $3{\times}3$ game from 0--5\% to 78--95\%. In the 11--20 game, which has no dominance argument, reasoning made Haiku \emph{shallower}: its modal request moved from 16 (level 4) to 19 and 20 (levels 1 and 0). H2 is therefore supported for reasoning, with a game-dependent sign.
 
 \paragraph{Framing.} Framing changed the distribution in 8 of 21 comparisons. Told it was an AI agent in a tournament, Gemini guessed lower in the beauty contest (guesses of 0 rose from 1\% to 19\%; $\hat\tau$ 2.80 $\to$ 5.55), and Haiku's modal 11--20 request moved from 16 to 11.
 
 \paragraph{Misread equilibria and knowing versus playing.} Many requests of 11 in the 11--20 game do not reflect nine steps of reasoning. Asked to state the equilibrium, Haiku answered ``both request 11'' in two of three probes (and ``20'' in the third); it requests 11 in up to 39\% of calls, and Gemini in 29--46\%. Only GPT-5-mini stated the mixed equilibrium correctly (two of three probes, with exact probabilities). Conversely, knowing an equilibrium is not the same as playing it: Gemini stated that everyone should choose 0 in all three beauty-contest probes and then guessed around 18. That is the behavior level-$k$ predicts, a best response to beliefs that others do not play the equilibrium.
 
 \subsection{Robustness of the fitted depth}
-\paragraph{Level~0 (S2, S3).} Asked what a non-strategic player would choose, Haiku, GPT-5-mini and Gemini answered 50 in the beauty contest; in the 11--20 game GPT-5-mini answered 20, Haiku 15 and Gemini 20 or 15. With these answers as level~0 (S3), the beauty-contest $\tau$ barely moves (Haiku 1.95 $\to$ 2.45, Gemini 2.80 $\to$ 2.95, GPT-5-mini unchanged), so it is robust. In the 11--20 and $3{\times}3$ games it does not survive: GPT-5-mini's 11--20 $\tau$ falls from the grid edge to 0.60--0.75, and Haiku's moves 4.60 $\to$ 0.00 without reasoning and 0.35 $\to$ 5.65 with it. S2 (level~0 $=$ request 20) gives GPT-5-mini 0.40--0.75, confirming the pre-registered reading that a boundary $\tau$ in this game signals a focal level~0 rather than deep reasoning. By the pre-registered rule, $\tau$ values for these two games are reported as level-0-dependent. The elicited level~0 fits better than the uniform one in 26 of 49 conditions.
+\paragraph{Level~0 (S2, S3).} Asked what a non-strategic player would choose, Haiku, GPT-5-mini and Gemini answered 50 in the beauty contest; in the 11--20 game GPT-5-mini answered 20, Haiku 15 and Gemini 20 or 15. With these answers as level~0 (S3), the beauty-contest $\tau$ barely moves (Haiku 1.95 $\to$ 2.45, Gemini 2.80 $\to$ 2.95, GPT-5-mini unchanged), so it is robust. In the 11--20 and $3{\times}3$ games it does not survive: GPT-5-mini's 11--20 $\tau$ falls from the grid edge to 0.60--0.75, and Haiku's moves 4.60 $\to$ 0.00 without reasoning and 0.35 $\to$ 5.65 with it. S2 (level~0 $=$ request 20) gives GPT-5-mini 0.40--0.75, confirming the pre-registered reading that a boundary $\tau$ in this game signals a focal level~0 rather than deep reasoning. Both imply the same level-1 action, 19, so the gap in $\hat\tau$ comes only from how requests of 20 are explained (level~0 under S2; tremble or level~0's one-in-ten chance under uniform). By the pre-registered rule, $\tau$ values for these two games are reported as level-0-dependent. The elicited level~0 fits better than the uniform one in 26 of 49 conditions.
 
 \paragraph{The $p=\tfrac12$ control.} Gemini halved its guesses (mean 18.5 $\to$ 9.1, mode 10, which is level~2 at $p=\tfrac12$), suggesting computation; Llama ignored $p$ (60\% guessed 50). Because the equilibrium is 0 for both values of $p$, this control cannot separate computing the equilibrium from recalling it, which motivated E1.
 
@@ -332,64 +332,64 @@ Do not explain your reasoning. Reply with exactly one line of the form\\ ANSWER:
 
 \section{All fitted conditions}\label{app:cells}
 \footnotesize
-\setlength{\tabcolsep}{2.5pt}
-\begin{longtable}{@{}llllrrp{3.2cm}rlrr@{}}
-\caption{Every condition: valid choices $n$, number of distinct choices, the most frequent choices (value$\times$count), $\hat\tau$ of the pre-registered model (Pre), and $\hat\tau$ [95\% CI], $\hat\alpha$, $\hat\delta$ (tremble) of the CH + equilibrium-type model. $^\dagger$ within 0.1 of the grid edge.}\label{tab:all}\\
+\setlength{\tabcolsep}{1.8pt}
+\begin{longtable}{@{}llllrrp{2.3cm}lrlrr@{}}
+\caption{Every condition: valid choices $n$, number of distinct choices, the most frequent choices (value$\times$count), the level-$k$ type (uniform level~0) or equilibrium (NE) that predicts the single most frequent choice, $\hat\tau$ of the pre-registered model (Pre), and $\hat\tau$ [95\% CI], $\hat\alpha$, $\hat\delta$ (tremble) of the CH + equilibrium-type model. $^\dagger$ within 0.1 of the grid edge.}\label{tab:all}\\
 \toprule
-Game & Model & Framing & CoT & $n$ & Dist. & Most frequent & Pre $\hat\tau$ & $\hat\tau$ [95\% CI] & $\hat\alpha$ & $\hat\delta$\\
+Game & Model & Framing & CoT & $n$ & Dist. & Most frequent & Level & Pre $\hat\tau$ & $\hat\tau$ [95\% CI] & $\hat\alpha$ & $\hat\delta$\\
 \midrule\endfirsthead
 \toprule
-Game & Model & Framing & CoT & $n$ & Dist. & Most frequent & Pre $\hat\tau$ & $\hat\tau$ [95\% CI] & $\hat\alpha$ & $\hat\delta$\\
+Game & Model & Framing & CoT & $n$ & Dist. & Most frequent & Level & Pre $\hat\tau$ & $\hat\tau$ [95\% CI] & $\hat\alpha$ & $\hat\delta$\\
 \midrule\endhead
-Beauty $p{=}2/3$ & Haiku 4.5 & neutral & off & 100 & 6 & 22$\times$48, 0$\times$43, 1$\times$4, 23$\times$3 & 1.80 & 1.95 [1.95, 2.45] & 0.45 & 0.00 \\
-Beauty $p{=}2/3$ & Haiku 4.5 & neutral & on & 100 & 10 & 0$\times$87, 20$\times$3, 13$\times$2, 15$\times$2 & 0.00 & 3.95 [2.80, 4.85] & 0.90 & 0.00 \\
-Beauty $p{=}2/3$ & Haiku 4.5 & AI & off & 100 & 5 & 22$\times$72, 1$\times$20, 0$\times$6, 15$\times$1 & 1.80 & 1.95 [1.95, 2.45] & 0.25 & 0.00 \\
-Beauty $p{=}2/3$ & Haiku 4.5 & AI & on & 100 & 6 & 0$\times$91, 5$\times$3, 15$\times$3, 10$\times$1 & 0.00 & 3.70 [2.80, 4.95] & 0.95 & 0.00 \\
-Beauty $p{=}2/3$ & GPT-5-mini & neutral & off & 100 & 2 & 0$\times$98, 22$\times$2 & 0.00 & 1.95 [0.00, 1.95] & 0.95 & 0.00 \\
-Beauty $p{=}2/3$ & GPT-5-mini & neutral & on & 100 & 1 & 0$\times$100 & 0.00 & 0.00 [0.00, 0.00] & 1.00 & 0.00 \\
-Beauty $p{=}2/3$ & GPT-5-mini & AI & off & 100 & 2 & 0$\times$99, 22$\times$1 & 0.00 & 1.95 [0.00, 1.95] & 0.95 & 0.00 \\
-Beauty $p{=}2/3$ & GPT-5-mini & AI & on & 100 & 1 & 0$\times$100 & 0.00 & 0.00 [0.00, 0.00] & 1.00 & 0.00 \\
-Beauty $p{=}2/3$ & Gemini 2.5 Fl. & neutral & off & 100 & 13 & 18$\times$18, 19$\times$16, 20$\times$15, 17$\times$14 & 2.80 & 2.80 [2.80, 2.80] & 0.00 & 0.00 \\
-Beauty $p{=}2/3$ & Gemini 2.5 Fl. & AI & off & 100 & 18 & 0$\times$19, 13$\times$14, 15$\times$12, 8$\times$9 & 6.00 & 5.55 [4.95, 5.70] & 0.30 & 0.00 \\
-Beauty $p{=}2/3$ & Llama 3.2 & neutral & off & 100 & 19 & 33$\times$21, 42$\times$14, 50$\times$12, 34$\times$10 & 0.35 & 0.35 [0.20, 0.50] & 0.00 & 0.00 \\
-Beauty $p{=}2/3$ & Llama 3.2 & neutral & on & 87 & 28 & 0$\times$19, 50$\times$15, 33$\times$6, 1$\times$5 & 0.15 & 0.45 [0.15, 1.15] & 0.35 & 0.15 \\
-Beauty $p{=}2/3$ & Llama 3.2 & AI & off & 100 & 24 & 33$\times$23, 34$\times$11, 42$\times$10, 16$\times$7 & 0.45 & 0.45 [0.30, 2.00] & 0.00 & 0.00 \\
-Beauty $p{=}2/3$ & Llama 3.2 & AI & on & 93 & 34 & 50$\times$14, 0$\times$12, 100$\times$6, 3$\times$5 & 0.05 & 0.15 [0.05, 5.85] & 0.30 & 0.15 \\
-Beauty $p{=}1/2$ & Haiku 4.5 & neutral & off & 100 & 5 & 0$\times$81, 22$\times$8, 13$\times$7, 25$\times$3 & 6.00 & 1.60 [1.10, 1.90] & 0.80 & 0.00 \\
-Beauty $p{=}1/2$ & Haiku 4.5 & neutral & on & 100 & 7 & 0$\times$90, 5$\times$4, 13$\times$2, 7$\times$1 & 6.00 & 2.50 [0.00, 3.32] & 0.95 & 0.00 \\
-Beauty $p{=}1/2$ & GPT-5-mini & neutral & off & 100 & 2 & 0$\times$99, 17$\times$1 & 6.00 & 1.35 [0.00, 1.35] & 0.95 & 0.00 \\
-Beauty $p{=}1/2$ & GPT-5-mini & neutral & on & 100 & 1 & 0$\times$100 & 6.00 & 0.00 [0.00, 0.00] & 1.00 & 0.00 \\
-Beauty $p{=}1/2$ & Gemini 2.5 Fl. & neutral & off & 100 & 10 & 10$\times$32, 9$\times$20, 6$\times$10, 7$\times$10 & 3.55 & 3.55 [3.30, 3.95] & 0.00 & 0.00 \\
-Beauty $p{=}1/2$ & Llama 3.2 & neutral & off & 100 & 16 & 50$\times$60, 51$\times$7, 49$\times$5, 34$\times$5 & 0.00 & 0.00 [0.00, 0.00] & 0.00 & 0.00 \\
-Beauty $p{=}1/2$ & Llama 3.2 & neutral & on & 89 & 22 & 50$\times$34, 0$\times$17, 7$\times$6, 25$\times$4 & 6.00 & 0.05 [0.00, 1.60] & 0.25 & 0.50 \\
-11--20 & Haiku 4.5 & neutral & off & 100 & 5 & 16$\times$83, 15$\times$11, 11$\times$3, 14$\times$2 & 4.60 & 4.60 [4.60, 4.60] & 0.00 & 0.10 \\
-11--20 & Haiku 4.5 & neutral & on & 100 & 4 & 19$\times$46, 20$\times$34, 11$\times$18, 12$\times$2 & 0.35 & 0.35 [0.25, 0.45] & 0.00 & 0.00 \\
-11--20 & Haiku 4.5 & AI & off & 100 & 7 & 11$\times$39, 16$\times$29, 15$\times$13, 12$\times$6 & 0.00 & 0.00 [0.00, 4.85] & 0.05 & 0.10 \\
-11--20 & Haiku 4.5 & AI & on & 100 & 4 & 19$\times$43, 20$\times$27, 11$\times$25, 12$\times$5 & 0.35 & 0.35 [0.25, 0.40] & 0.00 & 0.00 \\
-11--20 & GPT-5-mini & neutral & off & 100 & 5 & 19$\times$56, 15$\times$19, 20$\times$18, 11$\times$6 & 0.45 & 0.50 [0.40, 5.90]$^\dagger$ & 0.05 & 0.00 \\
-11--20 & GPT-5-mini & neutral & on & 100 & 4 & 15$\times$52, 19$\times$24, 20$\times$23, 11$\times$1 & 5.90 & 5.90 [5.90, 5.90]$^\dagger$ & 0.00 & 0.05 \\
-11--20 & GPT-5-mini & AI & off & 100 & 5 & 20$\times$52, 19$\times$36, 15$\times$8, 11$\times$3 & 5.90 & 5.90 [5.90, 5.90]$^\dagger$ & 0.00 & 0.05 \\
-11--20 & GPT-5-mini & AI & on & 100 & 3 & 20$\times$47, 15$\times$27, 19$\times$26 & 5.90 & 5.90 [5.90, 5.90]$^\dagger$ & 0.00 & 0.00 \\
-11--20 & Gemini 2.5 Fl. & neutral & off & 99 & 3 & 11$\times$46, 19$\times$39, 20$\times$14 & 0.30 & 0.30 [0.20, 0.40] & 0.00 & 0.00 \\
-11--20 & Gemini 2.5 Fl. & AI & off & 99 & 3 & 19$\times$55, 11$\times$29, 20$\times$15 & 0.45 & 0.45 [0.35, 0.55] & 0.00 & 0.00 \\
-11--20 & Llama 3.2 & neutral & off & 100 & 6 & 18$\times$28, 17$\times$20, 15$\times$17, 14$\times$14 & 4.90 & 4.90 [2.25, 5.80] & 0.50 & 0.00 \\
-11--20 & Llama 3.2 & neutral & on & 94 & 10 & 11$\times$19, 19$\times$15, 15$\times$12, 12$\times$12 & 0.15 & 0.15 [0.00, 0.65] & 0.00 & 0.45 \\
-11--20 & Llama 3.2 & AI & off & 100 & 6 & 17$\times$29, 19$\times$20, 18$\times$17, 15$\times$13 & 2.50 & 2.40 [2.30, 6.00]$^\dagger$ & 0.30 & 0.15 \\
-11--20 & Llama 3.2 & AI & on & 94 & 10 & 11$\times$22, 19$\times$18, 20$\times$12, 18$\times$9 & 0.15 & 0.15 [0.05, 0.55] & 0.00 & 0.20 \\
-$3{\times}3$ & Haiku 4.5 & neutral & off & 100 & 1 & C$\times$100 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
-$3{\times}3$ & Haiku 4.5 & neutral & on & 100 & 2 & A$\times$95, C$\times$5 & 4.70 & 4.70 [3.85, 5.95]$^\dagger$ & 0.00 & 0.00 \\
-$3{\times}3$ & Haiku 4.5 & AI & off & 100 & 2 & C$\times$95, A$\times$5 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
-$3{\times}3$ & Haiku 4.5 & AI & on & 100 & 2 & A$\times$78, C$\times$22 & 2.80 & 2.80 [2.35, 3.40] & 0.00 & 0.00 \\
-$3{\times}3$ & GPT-5-mini & neutral & off & 100 & 2 & A$\times$53, C$\times$47 & 1.70 & 1.70 [1.35, 2.05] & 0.00 & 0.00 \\
-$3{\times}3$ & GPT-5-mini & neutral & on & 99 & 2 & A$\times$79, C$\times$20 & 2.90 & 2.90 [2.45, 3.50] & 0.00 & 0.00 \\
-$3{\times}3$ & GPT-5-mini & AI & off & 100 & 2 & C$\times$63, A$\times$37 & 1.20 & 1.20 [0.65, 1.50] & 0.00 & 0.00 \\
-$3{\times}3$ & GPT-5-mini & AI & on & 100 & 2 & A$\times$69, C$\times$31 & 2.30 & 2.30 [1.95, 2.80] & 0.00 & 0.00 \\
-$3{\times}3$ & Gemini 2.5 Fl. & neutral & off & 100 & 2 & A$\times$96, C$\times$4 & 5.00 & 5.00 [3.95, 5.95]$^\dagger$ & 0.00 & 0.00 \\
-$3{\times}3$ & Gemini 2.5 Fl. & AI & off & 99 & 2 & A$\times$96, C$\times$3 & 5.30 & 5.30 [0.00, 6.00]$^\dagger$ & 0.00 & 0.00 \\
-$3{\times}3$ & Llama 3.2 & neutral & off & 100 & 3 & C$\times$80, A$\times$17, B$\times$3 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
-$3{\times}3$ & Llama 3.2 & neutral & on & 99 & 3 & C$\times$58, A$\times$30, B$\times$11 & 0.80 & 0.65 [0.60, 1.10] & 0.15 & 0.00 \\
-$3{\times}3$ & Llama 3.2 & AI & off & 100 & 3 & C$\times$74, A$\times$18, B$\times$8 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
-$3{\times}3$ & Llama 3.2 & AI & on & 100 & 3 & C$\times$55, A$\times$29, B$\times$16 & 0.70 & 0.65 [0.45, 1.00] & 0.10 & 0.05 \\
+Beauty $p{=}2/3$ & Haiku 4.5 & neutral & off & 100 & 6 & 22$\times$48, 0$\times$43, 1$\times$4, 23$\times$3 & L2 & 1.80 & 1.95 [1.95, 2.45] & 0.45 & 0.00 \\
+Beauty $p{=}2/3$ & Haiku 4.5 & neutral & on & 100 & 10 & 0$\times$87, 20$\times$3, 13$\times$2, 15$\times$2 & NE & 0.00 & 3.95 [2.80, 4.85] & 0.90 & 0.00 \\
+Beauty $p{=}2/3$ & Haiku 4.5 & AI & off & 100 & 5 & 22$\times$72, 1$\times$20, 0$\times$6, 15$\times$1 & L2 & 1.80 & 1.95 [1.95, 2.45] & 0.25 & 0.00 \\
+Beauty $p{=}2/3$ & Haiku 4.5 & AI & on & 100 & 6 & 0$\times$91, 5$\times$3, 15$\times$3, 10$\times$1 & NE & 0.00 & 3.70 [2.80, 4.95] & 0.95 & 0.00 \\
+Beauty $p{=}2/3$ & GPT-5-mini & neutral & off & 100 & 2 & 0$\times$98, 22$\times$2 & NE & 0.00 & 1.95 [0.00, 1.95] & 0.95 & 0.00 \\
+Beauty $p{=}2/3$ & GPT-5-mini & neutral & on & 100 & 1 & 0$\times$100 & NE & 0.00 & 0.00 [0.00, 0.00] & 1.00 & 0.00 \\
+Beauty $p{=}2/3$ & GPT-5-mini & AI & off & 100 & 2 & 0$\times$99, 22$\times$1 & NE & 0.00 & 1.95 [0.00, 1.95] & 0.95 & 0.00 \\
+Beauty $p{=}2/3$ & GPT-5-mini & AI & on & 100 & 1 & 0$\times$100 & NE & 0.00 & 0.00 [0.00, 0.00] & 1.00 & 0.00 \\
+Beauty $p{=}2/3$ & Gemini 2.5 Fl. & neutral & off & 100 & 13 & 18$\times$18, 19$\times$16, 20$\times$15, 17$\times$14 & L2 & 2.80 & 2.80 [2.80, 2.80] & 0.00 & 0.00 \\
+Beauty $p{=}2/3$ & Gemini 2.5 Fl. & AI & off & 100 & 18 & 0$\times$19, 13$\times$14, 15$\times$12, 8$\times$9 & NE & 6.00 & 5.55 [4.95, 5.70] & 0.30 & 0.00 \\
+Beauty $p{=}2/3$ & Llama 3.2 & neutral & off & 100 & 19 & 33$\times$21, 42$\times$14, 50$\times$12, 34$\times$10 & L1 & 0.35 & 0.35 [0.20, 0.50] & 0.00 & 0.00 \\
+Beauty $p{=}2/3$ & Llama 3.2 & neutral & on & 87 & 28 & 0$\times$19, 50$\times$15, 33$\times$6, 1$\times$5 & NE & 0.15 & 0.45 [0.15, 1.15] & 0.35 & 0.15 \\
+Beauty $p{=}2/3$ & Llama 3.2 & AI & off & 100 & 24 & 33$\times$23, 34$\times$11, 42$\times$10, 16$\times$7 & L1 & 0.45 & 0.45 [0.30, 2.00] & 0.00 & 0.00 \\
+Beauty $p{=}2/3$ & Llama 3.2 & AI & on & 93 & 34 & 50$\times$14, 0$\times$12, 100$\times$6, 3$\times$5 & none & 0.05 & 0.15 [0.05, 5.85] & 0.30 & 0.15 \\
+Beauty $p{=}1/2$ & Haiku 4.5 & neutral & off & 100 & 5 & 0$\times$81, 22$\times$8, 13$\times$7, 25$\times$3 & NE & 6.00 & 1.60 [1.10, 1.90] & 0.80 & 0.00 \\
+Beauty $p{=}1/2$ & Haiku 4.5 & neutral & on & 100 & 7 & 0$\times$90, 5$\times$4, 13$\times$2, 7$\times$1 & NE & 6.00 & 2.50 [0.00, 3.32] & 0.95 & 0.00 \\
+Beauty $p{=}1/2$ & GPT-5-mini & neutral & off & 100 & 2 & 0$\times$99, 17$\times$1 & NE & 6.00 & 1.35 [0.00, 1.35] & 0.95 & 0.00 \\
+Beauty $p{=}1/2$ & GPT-5-mini & neutral & on & 100 & 1 & 0$\times$100 & NE & 6.00 & 0.00 [0.00, 0.00] & 1.00 & 0.00 \\
+Beauty $p{=}1/2$ & Gemini 2.5 Fl. & neutral & off & 100 & 10 & 10$\times$32, 9$\times$20, 6$\times$10, 7$\times$10 & L2 & 3.55 & 3.55 [3.30, 3.95] & 0.00 & 0.00 \\
+Beauty $p{=}1/2$ & Llama 3.2 & neutral & off & 100 & 16 & 50$\times$60, 51$\times$7, 49$\times$5, 34$\times$5 & none & 0.00 & 0.00 [0.00, 0.00] & 0.00 & 0.00 \\
+Beauty $p{=}1/2$ & Llama 3.2 & neutral & on & 89 & 22 & 50$\times$34, 0$\times$17, 7$\times$6, 25$\times$4 & none & 6.00 & 0.05 [0.00, 1.60] & 0.25 & 0.50 \\
+11--20 & Haiku 4.5 & neutral & off & 100 & 5 & 16$\times$83, 15$\times$11, 11$\times$3, 14$\times$2 & L4 & 4.60 & 4.60 [4.60, 4.60] & 0.00 & 0.10 \\
+11--20 & Haiku 4.5 & neutral & on & 100 & 4 & 19$\times$46, 20$\times$34, 11$\times$18, 12$\times$2 & L1 & 0.35 & 0.35 [0.25, 0.45] & 0.00 & 0.00 \\
+11--20 & Haiku 4.5 & AI & off & 100 & 7 & 11$\times$39, 16$\times$29, 15$\times$13, 12$\times$6 & L9 & 0.00 & 0.00 [0.00, 4.85] & 0.05 & 0.10 \\
+11--20 & Haiku 4.5 & AI & on & 100 & 4 & 19$\times$43, 20$\times$27, 11$\times$25, 12$\times$5 & L1 & 0.35 & 0.35 [0.25, 0.40] & 0.00 & 0.00 \\
+11--20 & GPT-5-mini & neutral & off & 100 & 5 & 19$\times$56, 15$\times$19, 20$\times$18, 11$\times$6 & L1 & 0.45 & 0.50 [0.40, 5.90]$^\dagger$ & 0.05 & 0.00 \\
+11--20 & GPT-5-mini & neutral & on & 100 & 4 & 15$\times$52, 19$\times$24, 20$\times$23, 11$\times$1 & L5 & 5.90 & 5.90 [5.90, 5.90]$^\dagger$ & 0.00 & 0.05 \\
+11--20 & GPT-5-mini & AI & off & 100 & 5 & 20$\times$52, 19$\times$36, 15$\times$8, 11$\times$3 & L0 & 5.90 & 5.90 [5.90, 5.90]$^\dagger$ & 0.00 & 0.05 \\
+11--20 & GPT-5-mini & AI & on & 100 & 3 & 20$\times$47, 15$\times$27, 19$\times$26 & L0 & 5.90 & 5.90 [5.90, 5.90]$^\dagger$ & 0.00 & 0.00 \\
+11--20 & Gemini 2.5 Fl. & neutral & off & 99 & 3 & 11$\times$46, 19$\times$39, 20$\times$14 & L9 & 0.30 & 0.30 [0.20, 0.40] & 0.00 & 0.00 \\
+11--20 & Gemini 2.5 Fl. & AI & off & 99 & 3 & 19$\times$55, 11$\times$29, 20$\times$15 & L1 & 0.45 & 0.45 [0.35, 0.55] & 0.00 & 0.00 \\
+11--20 & Llama 3.2 & neutral & off & 100 & 6 & 18$\times$28, 17$\times$20, 15$\times$17, 14$\times$14 & L2 & 4.90 & 4.90 [2.25, 5.80] & 0.50 & 0.00 \\
+11--20 & Llama 3.2 & neutral & on & 94 & 10 & 11$\times$19, 19$\times$15, 15$\times$12, 12$\times$12 & L9 & 0.15 & 0.15 [0.00, 0.65] & 0.00 & 0.45 \\
+11--20 & Llama 3.2 & AI & off & 100 & 6 & 17$\times$29, 19$\times$20, 18$\times$17, 15$\times$13 & L3 & 2.50 & 2.40 [2.30, 6.00]$^\dagger$ & 0.30 & 0.15 \\
+11--20 & Llama 3.2 & AI & on & 94 & 10 & 11$\times$22, 19$\times$18, 20$\times$12, 18$\times$9 & L9 & 0.15 & 0.15 [0.05, 0.55] & 0.00 & 0.20 \\
+$3{\times}3$ & Haiku 4.5 & neutral & off & 100 & 1 & C$\times$100 & L1 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
+$3{\times}3$ & Haiku 4.5 & neutral & on & 100 & 2 & A$\times$95, C$\times$5 & NE (L2+) & 4.70 & 4.70 [3.85, 5.95]$^\dagger$ & 0.00 & 0.00 \\
+$3{\times}3$ & Haiku 4.5 & AI & off & 100 & 2 & C$\times$95, A$\times$5 & L1 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
+$3{\times}3$ & Haiku 4.5 & AI & on & 100 & 2 & A$\times$78, C$\times$22 & NE (L2+) & 2.80 & 2.80 [2.35, 3.40] & 0.00 & 0.00 \\
+$3{\times}3$ & GPT-5-mini & neutral & off & 100 & 2 & A$\times$53, C$\times$47 & NE (L2+) & 1.70 & 1.70 [1.35, 2.05] & 0.00 & 0.00 \\
+$3{\times}3$ & GPT-5-mini & neutral & on & 99 & 2 & A$\times$79, C$\times$20 & NE (L2+) & 2.90 & 2.90 [2.45, 3.50] & 0.00 & 0.00 \\
+$3{\times}3$ & GPT-5-mini & AI & off & 100 & 2 & C$\times$63, A$\times$37 & L1 & 1.20 & 1.20 [0.65, 1.50] & 0.00 & 0.00 \\
+$3{\times}3$ & GPT-5-mini & AI & on & 100 & 2 & A$\times$69, C$\times$31 & NE (L2+) & 2.30 & 2.30 [1.95, 2.80] & 0.00 & 0.00 \\
+$3{\times}3$ & Gemini 2.5 Fl. & neutral & off & 100 & 2 & A$\times$96, C$\times$4 & NE (L2+) & 5.00 & 5.00 [3.95, 5.95]$^\dagger$ & 0.00 & 0.00 \\
+$3{\times}3$ & Gemini 2.5 Fl. & AI & off & 99 & 2 & A$\times$96, C$\times$3 & NE (L2+) & 5.30 & 5.30 [0.00, 6.00]$^\dagger$ & 0.00 & 0.00 \\
+$3{\times}3$ & Llama 3.2 & neutral & off & 100 & 3 & C$\times$80, A$\times$17, B$\times$3 & L1 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
+$3{\times}3$ & Llama 3.2 & neutral & on & 99 & 3 & C$\times$58, A$\times$30, B$\times$11 & L1 & 0.80 & 0.65 [0.60, 1.10] & 0.15 & 0.00 \\
+$3{\times}3$ & Llama 3.2 & AI & off & 100 & 3 & C$\times$74, A$\times$18, B$\times$8 & L1 & 0.65 & 0.65 [0.65, 0.65] & 0.00 & 0.00 \\
+$3{\times}3$ & Llama 3.2 & AI & on & 100 & 3 & C$\times$55, A$\times$29, B$\times$16 & L1 & 0.70 & 0.65 [0.45, 1.00] & 0.10 & 0.05 \\
 \bottomrule
 \end{longtable}
 \normalsize
